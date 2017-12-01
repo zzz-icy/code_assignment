@@ -9,41 +9,46 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    
-    
+
+
 </head>
 
 <body>
     <div class="header">
-        <h1>Toes and Fingers!</h1>
+        <h1>Fingers and Toes!</h1>
     </div>
     <div class="time">
 
         <div class="time-prompt">
-            <h1>Please type in the number of seconds you'd like to count to: </h1>
+            <p>Please type in the number of seconds you'd like to count to: </p>
         </div>
 
         <div class="time-input">
-            <input type="number" placeholder="Please input the number of seconds......">
+            <input type="number" placeholder="seconds" id="seconds">
+        </div>
+
+        <div class="button-group">
+
+
+            <div class="time-reset-button">
+                <button type="button">Reset</button>
+            </div>
+
+            <div class="time-confirm-button">
+                <button type="button">Confirm</button>
+            </div>
+
+            <div class="time-restart-button">
+                <button type="button" id="restart">Restart</button>
+            </div>
         </div>
 
 
-        <div class="time-confirm-button">
-            <button type="button">Confirm</button>
-        </div>
-
-        <div class="time-reset-button">
-            <button type="button">Reset</button>
-        </div>
     </div>
 
     <div class="display">
         <div class="dispaly-counter">
             <p>0</p>
-        </div>
-
-        <div class="display-restart-button">
-            <button type="button" id ="restart">Restart</button>
         </div>
 
         <div class="display-fingers">
@@ -54,7 +59,7 @@
             <p>Toes</p>
         </div>
     </div>
-  
+
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Macondo+Swash+Caps);
+
 
 
 // variables
@@ -17,9 +18,195 @@ $standard-border: 4px solid black;
     right: 0;
     top: 0;
     h1 {
-        font-family: Pacifico, sans-serif;
+        font-family: 'Macondo Swash Caps', cursive;
         text-align: center;
         color: rgb(253, 178, 48);
+        font-size: 45px;
       }
 
 }
+
+.time {
+// No floating elements allowed on the left or the right side
+    position: absolute;
+    left:10%;
+    right:10%;
+    top: 115px;
+    
+    .time-prompt{
+        // padding-top: 110px;
+        float: left;
+        position: relative;
+        left: 7%;
+        p{
+            font-family: 'Macondo Swash Caps', cursive;
+            text-align: center;
+            color: rgb(253, 178, 48);
+            font-size: 30px;
+                   
+        }
+    }
+
+    .time-input {
+        float: left;        
+        position: relative;  
+        left: 15%;     
+        clear:both;               
+        
+        input {               
+            height: 40px;
+            text-align: center;
+            font-size: 21px;
+        }
+    }
+
+    .button-group{
+        float: left;
+        position: relative;
+        left: 7%;
+        clear:both;       
+
+        .time-reset-button{
+            padding-top: 50px;
+            float: left;        
+            position: relative;
+            button{
+                background-color: rgb(180, 218, 240); 
+                border: none;
+                color: white;
+                cursor: pointer;                
+                height: 42px;
+                width: 105px;
+                display: inline-block;                
+                position: relative;
+                font-size: 18px;
+                
+            }
+            button:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        }
+
+        .time-confirm-button{
+            padding-top: 50px;
+            float: left;        
+            position: relative;
+            left: 13%;
+            button{
+                background-color: rgb(180, 218, 240); 
+                border: none;
+                color: white;
+                cursor: pointer;                
+                height: 42px;
+                width: 105px;
+                display: inline-block;                
+                position: relative;
+                font-size: 18px;
+                
+            }
+
+            button:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+    }
+        .time-restart-button{
+            padding-top: 50px;
+            float: left;        
+            position: relative;
+            left: 28%;            
+            button{
+                background-color: rgb(180, 218, 240); 
+                border: none;
+                color: white;
+                cursor: pointer;                
+                height: 42px;
+                width: 105px;
+                display: inline-block;                
+                position: relative;
+                font-size: 18px;
+                
+            }
+            button:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        }
+        
+  
+    }
+}
+
+
+
+.display{
+    position: absolute;
+    top:400px;
+
+    left: 0;
+    right: 0;
+    background-color: #eee;
+    box-shadow: 1px 1px 4px 0 lightgrey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    .dispaly-counter{
+        float: left;
+        position: relative;
+        left: 47%;
+        border-bottom:solid;
+        border-bottom-color:rgb(253, 178, 48); 
+        margin-bottom: 40px;
+        p{
+            margin-top: 50%;
+            font-family: 'Macondo Swash Caps', cursive;
+            text-align: center;
+            color: rgb(253, 178, 48);  
+            font-size:30px;
+        }
+        
+
+    }
+
+    .display-fingers{
+        float: left;
+        position: relative;
+        left: 10%;
+        // clear:both; 
+        height: 120px;
+        width: 140px;  
+        // background-color:  rgb(180, 218, 240); 
+        background-color: white;   
+        border: solid;  
+        border-color: rgb(253, 178, 48);
+        p{
+            margin-top: 28%;
+            font-family: 'Macondo Swash Caps', cursive;
+            text-align: center;
+            color: rgb(253, 178, 48);  
+            font-size:30px;
+        }
+        
+
+    }
+    .display-toes{
+        float: left;
+        position: relative;
+        left: 50%;
+        height: 120px;
+        width: 140px;  
+        // background-color:  rgb(180, 218, 240); 
+        background-color: white;           
+        border: solid;  
+        border-color: rgb(253, 178, 48);
+        p{
+            margin-top: 28%;
+            font-family: 'Macondo Swash Caps', cursive;
+            text-align: center;
+            color: rgb(253, 178, 48);  
+            font-size:30px;
+        }
+
+    }
+
+}
+
+

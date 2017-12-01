@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Macondo+Swash+Caps);
 .header {
   height: 100px;
   background: #b4daf0;
@@ -7,8 +7,141 @@
   right: 0;
   top: 0; }
   .header h1 {
-    font-family: Pacifico, sans-serif;
+    font-family: 'Macondo Swash Caps', cursive;
     text-align: center;
-    color: #fdb230; }
+    color: #fdb230;
+    font-size: 45px; }
+
+.time {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 115px; }
+  .time .time-prompt {
+    float: left;
+    position: relative;
+    left: 7%; }
+    .time .time-prompt p {
+      font-family: 'Macondo Swash Caps', cursive;
+      text-align: center;
+      color: #fdb230;
+      font-size: 30px; }
+  .time .time-input {
+    float: left;
+    position: relative;
+    left: 15%;
+    clear: both; }
+    .time .time-input input {
+      height: 40px;
+      text-align: center;
+      font-size: 21px; }
+  .time .button-group {
+    float: left;
+    position: relative;
+    left: 7%;
+    clear: both; }
+    .time .button-group .time-reset-button {
+      padding-top: 50px;
+      float: left;
+      position: relative; }
+      .time .button-group .time-reset-button button {
+        background-color: #b4daf0;
+        border: none;
+        color: white;
+        cursor: pointer;
+        height: 42px;
+        width: 105px;
+        display: inline-block;
+        position: relative;
+        font-size: 18px; }
+      .time .button-group .time-reset-button button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+    .time .button-group .time-confirm-button {
+      padding-top: 50px;
+      float: left;
+      position: relative;
+      left: 13%; }
+      .time .button-group .time-confirm-button button {
+        background-color: #b4daf0;
+        border: none;
+        color: white;
+        cursor: pointer;
+        height: 42px;
+        width: 105px;
+        display: inline-block;
+        position: relative;
+        font-size: 18px; }
+      .time .button-group .time-confirm-button button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+    .time .button-group .time-restart-button {
+      padding-top: 50px;
+      float: left;
+      position: relative;
+      left: 28%; }
+      .time .button-group .time-restart-button button {
+        background-color: #b4daf0;
+        border: none;
+        color: white;
+        cursor: pointer;
+        height: 42px;
+        width: 105px;
+        display: inline-block;
+        position: relative;
+        font-size: 18px; }
+      .time .button-group .time-restart-button button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+
+.display {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  right: 0;
+  background-color: #eee;
+  box-shadow: 1px 1px 4px 0 lightgrey;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .display .dispaly-counter {
+    float: left;
+    position: relative;
+    left: 47%;
+    border-bottom: solid;
+    border-bottom-color: #fdb230;
+    margin-bottom: 40px; }
+    .display .dispaly-counter p {
+      margin-top: 50%;
+      font-family: 'Macondo Swash Caps', cursive;
+      text-align: center;
+      color: #fdb230;
+      font-size: 30px; }
+  .display .display-fingers {
+    float: left;
+    position: relative;
+    left: 10%;
+    height: 120px;
+    width: 140px;
+    background-color: white;
+    border: solid;
+    border-color: #fdb230; }
+    .display .display-fingers p {
+      margin-top: 28%;
+      font-family: 'Macondo Swash Caps', cursive;
+      text-align: center;
+      color: #fdb230;
+      font-size: 30px; }
+  .display .display-toes {
+    float: left;
+    position: relative;
+    left: 50%;
+    height: 120px;
+    width: 140px;
+    background-color: white;
+    border: solid;
+    border-color: #fdb230; }
+    .display .display-toes p {
+      margin-top: 28%;
+      font-family: 'Macondo Swash Caps', cursive;
+      text-align: center;
+      color: #fdb230;
+      font-size: 30px; }
 
 /*# sourceMappingURL=style.css.map */
