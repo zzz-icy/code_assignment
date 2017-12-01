@@ -19,11 +19,10 @@ $(document).ready(function () {
 
 
     $("#restart").on('click', () => {
-
-
+        var inputNumber = $('#seconds').val();
+        displayedNumber.text('0');
+        timeCount(inputNumber);
     });
-
-
 
     function timeCount(seconds) {
         clearAllIntervals();
@@ -35,68 +34,31 @@ $(document).ready(function () {
             // console.log('interval gets called');
             var currentNum = startNum++;
             // console.log(newNum);
-            if (currentNum < seconds) {
+            if (currentNum <= seconds) {
                 if (currentNum % 5 === 0 && currentNum % 3 === 0) {
-                    fingersDiv.style.backgroundColor = 'cornflowerblue';
-                    fingersDiv.style.color = 'white';
-                    toesDiv.style.backgroundColor = 'cornflowerblued';
-                    toesDiv.style.color = 'white';
-                    displayedNumber.innerHTML = currentNum.toString();
+                    fingers.css("background-color", "rgb(180, 218, 240)");
+                    toes.css("background-color", "rgb(180, 218, 240)");
+                    displayedNumber.text(currentNum.toString());
                 }
                 else if (currentNum % 5 === 0) {
-                    fingersDiv.style.backgroundColor = 'transparent';
-                    fingersDiv.style.color = '#555';
-                    toesDiv.style.backgroundColor = 'cornflowerblue';
-                    toesDiv.style.color = 'white';
-                    displayedNumber.innerHTML = currentNum.toString();
+                    fingers.css("background-color", "white");
+                    toes.css("background-color", "rgb(180, 218, 240)");
+                    displayedNumber.text(currentNum.toString());
                 }
                 else if (currentNum % 3 === 0) {
-                    toesDiv.style.backgroundColor = 'transparent';
-                    toesDiv.style.color = '#555';
-                    fingersDiv.style.backgroundColor = 'cornflowerblue';
-                    fingersDiv.style.color = 'white';
-                    displayedNumber.innerHTML = currentNum.toString();
+                    fingers.css("background-color", "rgb(180, 218, 240)");
+                    toes.css("background-color", "white");
+                    displayedNumber.text(currentNum.toString());
                 }
                 else {
-                    toesDiv.style.color = '#555';
-                    fingersDiv.style.color = '#555';
-                    toesDiv.style.backgroundColor = 'transparent';
-                    fingersDiv.style.backgroundColor = 'transparent';
-                    displayedNumber.innerHTML = currentNum.toString();
+                    fingers.css("background-color", "white");
+                    toes.css("background-color", "white");
+                    displayedNumber.text(currentNum.toString());
                 }
             }
-            if (currentNum == seconds) {
-                if (newNum % 5 === 0 && newNum % 3 === 0) {
-                    fingersDiv.style.backgroundColor = 'cornflowerblue';
-                    fingersDiv.style.color = 'white';
-                    toesDiv.style.backgroundColor = 'cornflowerblue';
-                    toesDiv.style.color = 'white';
-                    displayedNumber.innerHTML = currentNum.toString();
-                }
-                else if (currentNum % 5 === 0) {
-                    fingersDiv.style.backgroundColor = 'transparent';
-                    fingersDiv.style.color = '#555';
-                    toesDiv.style.backgroundColor = 'cornflowerblue';
-                    toesDiv.style.color = 'white';
-                    displayedNumber.innerHTML = currentNum.toString();
-                }
-                else if (currentNum % 3 === 0) {
-                    toesDiv.style.backgroundColor = 'transparent';
-                    toesDiv.style.color = '#555';
-                    fingersDiv.style.backgroundColor = 'cornflowerblue';
-                    fingersDiv.style.color = 'white';
-                    displayedNumber.innerHTML = currentNum.toString();
-                }
-                else {
-                    fingersDiv.style.color = '#555';
-                    toesDiv.style.color = '#555';
-                    toesDiv.style.backgroundColor = 'transparent';
-                    fingersDiv.style.backgroundColor = 'transparent';
-                    displayedNumber.innerHTML = currentNum.toString();
-                }
-                displayedNumber.innerHTML = currentNum.toString();
+           
                 clearInterval(intervalId);
-            }
+            
         }, 1000);
     }
 
